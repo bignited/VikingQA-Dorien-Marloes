@@ -32,6 +32,7 @@ export default defineConfig({
     trace: 'on-first-retry',
     video: 'on'
   },
+  timeout: 5000,
 
   /* Configure projects for major browsers */
   projects: [
