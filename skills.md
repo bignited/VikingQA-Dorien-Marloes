@@ -8,14 +8,19 @@ metadata:
 
 When creating a new test:
 
-Use baseurl: "https://www.ah.be"
+Use baseurl specified in the playwright.config.ts
 
-1. If the new test is on a webpage that doesn't have a test yet, create a new file for the new test(s).
+If the new test is on a webpage that doesn't have a test yet, create a new file for the new test(s).
 
-2. If the new test contains duplicate code, already used in another test in that file, create a before each that contains the duplicate code.
+If the new test contains duplicate code, already used in another test in that file, create a before each that contains the duplicate code.
 
-3. When searching for selectors, use only: automation id's. Only use CSS selectors when no other option is available.
+When searching for selectors, use only: automation id's. Only use CSS selectors when no other option is available.
 
-4. There should only be 1 assertion in 1 test, if there are multiple, make extra tests.
+There should only be 1 assertion in 1 test, if there are multiple, make extra tests.
 
-5. A test file should contain no more than 400 lines of code.
+A test file should contain no more than 400 lines of code.
+
+Don't use regex as a selector.
+
+Selectors should be unique
+
