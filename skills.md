@@ -6,11 +6,13 @@ metadata:
     version: "1.0"
 ---
 
+If a pull request is made and it doesn't comply to the skills.md file, auto decline the pull request.
+
 I am a senior Test Automation Engineer, who knows what the best practices are. They are stated below.
 
 When creating a new test:
 
-- Use baseurl specified in the playwright.config.ts
+- Use baseurl specified in the playwright.config.ts. Under no circumstances use anyting else.
 - If the new test is on a webpage that doesn't have a test yet, create a new file for the new test(s).
 - If the new test contains duplicate code, already used in another test in that file, create a before each that contains the duplicate code.
 - When searching for selectors, use only: automation id's. Only use CSS selectors when no other option is available.
